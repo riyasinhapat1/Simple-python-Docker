@@ -9,12 +9,13 @@ LABEL description="A simple Python application"
 # Working directory
 WORKDIR /app
 
-# Copy source code into the container
-COPY src/main.py /app/main.py
+# Copy the Python script into the container
+COPY app.py .
 
-# Install dependencies (if any requirements file exists)
-COPY requirements.txt /app/requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+# Run the Python script when the container starts
+CMD ["python", "app.py"]
 
-# Run the Python application when the container starts
-CMD ["python", "main.py"]
+COPY app.py .
+
+# Run the Python script when the container starts
+CMD ["python", "app.py"]

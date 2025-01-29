@@ -1,1 +1,19 @@
+from datetime import datetime
 
+now = datetime.now()
+
+# Current date and time
+current_datetime = now.strftime("%Y-%m-%d %H:%M:%S")
+print("Current date and time:", current_datetime)
+
+# Current date
+current_date = now.strftime("%Y-%m-%d")
+print("Current date:", current_date)
+
+# Current time
+current_time = now.strftime("%H:%M:%S")
+print("Current time:", current_time)
+
+# Current day of the week
+current_day = now.strftime("%A") 
+print("Current day:", current_day)

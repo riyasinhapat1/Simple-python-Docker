@@ -14,8 +14,3 @@ COPY app.py .
 
 # Run the Python script when the container starts
 CMD ["python", "app.py"]
-
-COPY app.py .
-
-# Run the Python script when the container starts
-CMD ["python", "app.py"]
